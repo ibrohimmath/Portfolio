@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=JetBrains+Mono:100,200,300,regular,500,600,700,800,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+
+$navFont: "Montserrat", sans-serif;
+$jetFont: "JetBrains Mono", sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+header {
+    font-family: $navFont;
+    nav {
+        font-weight: 440;
+    }
+    #check {
+        display: none;
+        &:checked ~ ul {
+            right: 0;
+        }
+        &:checked ~ .close {
+            display: block;
+        } 
+    }
+    .open {
+        display: none;
+        @media (max-width: 750px) { 
+            display: block;
+        }
+    }
+    .close {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(128, 128, 128, 0.388);
+    }
+    ul {
+        transition-duration: 0.4s;
+        @media (max-width: 750px) {
+            z-index: 10;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            height: 100vh;
+            width: 60vw;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
