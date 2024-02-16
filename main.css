@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   color: black;
+  scroll-behavior: smooth;
+  scroll-margin-block-start: 80px;
 }
 
 header {
@@ -54,4 +56,53 @@ header ul {
     justify-content: center;
     align-items: center;
   }
+}
+
+.showcase__link {
+  width: 40px;
+}
+
+.btn {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  width: 45%;
+  transition-duration: 0.4s;
+  background: white;
+  color: black;
+  padding: 10px 0px;
+  border-radius: 25px;
+  font-size: 16px;
+  border: 2px solid rgb(46, 45, 45);
+  font-weight: 550;
+}
+.btn--black {
+  color: black;
+  background: white;
+}
+.btn--black:hover, .btn--black:focus, .btn--black:active {
+  color: white;
+  background: black;
+}
+.btn--gray {
+  color: white;
+  background: rgb(42, 41, 41);
+}
+.btn--gray:hover, .btn--gray:focus, .btn--gray:active {
+  color: rgb(42, 41, 41);
+  background: white;
+}
+.btn--fixed {
+  width: 130px;
+}
+
+footer li {
+  transition-duration: 0.4s;
+}
+footer li:hover, footer li:active, footer li:focus {
+  color: rgb(91, 90, 90);
+}
+
+#about {
+  scroll-margin-block-start: -300px;
 }/*# sourceMappingURL=main.css.map */

@@ -32,18 +32,91 @@
 <body>
     <header class="container max-w-[1100px] w-[83%] mx-auto mt-6">
         <nav class="text-[26px] max-lg:text-[23px] max-md:text-[20px] max-sm:text-[17px] flex justify-between items-center">
-            <div class="logo hover:text-gray-600 hover:cursor-pointer">John Doe</div>
+            <div class="logo hover:text-gray-600 hover:cursor-pointer">Ibrohim Ahmadjonov</div>
             <input type="checkbox" id="check">
-            <label for="check" class="open"><i class="fa-solid fa-bars"></i></label>
+            <label for="check" class="open cursor-pointer"><i class="fa-solid fa-bars"></i></label>
             <label for="check" class="close"></label>
             <ul class="flex gap-x-7 gap-y-3 text-[20px] max-lg:text-[20px] max-md:text-[17px] max-sm:text-[15px] max-[750px]:bg-black">
-                <li class="hover:text-gray-600 max-[750px]:text-white"><a href="#">About</a></li>
+                <li class="hover:text-gray-600 max-[750px]:text-white"><a href="#about">About</a></li>
                 <li class="hover:text-gray-600 max-[750px]:text-white"><a href="#">Experience</a></li>
-                <li class="hover:text-gray-600 max-[750px]:text-white"><a href="#">Projects</a></li>
-                <li class="hover:text-gray-600 max-[750px]:text-white"><a href="#">Contact</a></li>
+                <li class="hover:text-gray-600 max-[750px]:text-white"><a href="#projectss">Projects</a></li>
+                <li class="hover:text-gray-600 max-[750px]:text-white"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <div class="showcase mt-[200px] w-fit mx-auto grid grid-cols-2 max-md:grid-cols-1 justify-center items-center gap-x-8 gap-y-3">
+        <div class="showcase__image mx-auto">        
+            <img class="w-[280px] max-lg:w-[250px] max-md:w-[220px]" src="./images/my_image.png" alt="My Image">
+        </div>
+        <div class="showcase__content flex flex-col justify-center items-center">
+            <p id="about" class="text-[rgb(74,74,74)] text-[18px] max-lg:text-[18px] max-md:text-[16px] max-sm:text-[14px] font-semibold">Hello, I'm</p>
+            <h1 class="font-bold text-[35px] max-lg:text-[33px] max-md:text-[30px] max-sm:text-[26px]">Ibrohim Ahmadjonov</h1>
+            <h2 class="font-bold text-[30px] max-lg:text-[28px] max-md:text-[26px] max-sm:text-[23px] text-gray-600">Frontend Developer</h2>
+            <div class="row mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+                <div class="btn btn--fixed cursor-pointer btn--black max-md:text-[14px]"><a href="./Resume.pdf" download>Download CV</a></div>
+                <div class="btn btn--fixed cursor-pointer btn--gray max-md:text-[14px]"><a href="tel:+998940099399">Contact info</a></div>
+            </div>
+            <div class="row mt-4 flex flex-wrap items-center gap-x-4">
+                <div class="showcase__link">
+                    <a href="#"><img src="./images/linked_in_logo.png" alt="LinkedIn"></a>
+                </div>
+                <div class="showcase__link">
+                    <a href="https://github.com/ibrohimmath/" target="_blank"><img src="./images/GitHub_Invertocat_Logo.svg.png" alt="Github"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about container w-[60%] mx-auto mt-[250px] flex flex-col justify-center items-center text-center">
+        <p class="text-[rgb(111,110,110)] text-[18px] max-lg:text-[16px] max-md:text-[14px] max-sm:text-[14px] font-semibold">Get To Know More</p>
+        <h1 class="font-bold text-[35px] max-lg:text-[33px] max-md:text-[30px] max-sm:text-[26px]">About Me</h1>
+        <p class="about__text mt-4 leading-8 text-justify max-md:text-[14px]"> &nbsp; &nbsp; &nbsp; Since my school days, I was interested in mathematics and adored to solve difficult problems. I participated in the mathematical olympiads many times. When I entered the university, I was very interested in programming. That's why I was very interested in data structure and algorithms during my 1st year. I am still participating in interuniversity informatics olympiads. I started learning web programming since my 2nd year. I started to learn python and javascript programming languages under the pretext of learning web programming. So far I've been learning more javascript and trying to create beautiful and efficient web apps.</p>
+    </div>
+
+    <div class="projects mt-[250px] container max-w-[1100px] w-[83%] mx-auto text-center">
+        <p id="projectss" class="text-[rgb(111,110,110)] text-[18px] max-lg:text-[16px] max-md:text-[14px] max-sm:text-[14px] font-semibold">Browse My Recent</p>
+        <h1 class="font-bold text-[35px] max-lg:text-[33px] max-md:text-[30px] max-sm:text-[26px]">Projects</h1>
+        <div class="projects__cards mx-auto mt-6 w-[95%] grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-6">
+            <div class="project__card px-6 py-4 border-gray-400 border-2 rounded-2xl text-center">
+                <img class="h-[350px] w-full object-cover object-center rounded-2xl" src="./images/tic-tac-toe.png" alt="Tic Tac Toe">
+                <h1 class="project__info mt-4 font-bold text-[23px] max-lg:text-[20px] max-md:text-[17px]">Tic Tac Toe</h1>
+                <div class="row mt-4 flex max-[380px]:flex-col items-center justify-center gap-4">
+                    <div class="btn btn--black"><a target="_blank" href="https://github.com/ibrohimmath/TicTacToe">GitHub</a></div>
+                    <div class="btn btn--black"><a target="_blank" href="https://ibrohimmath.github.io/TicTacToe/">Live Demo</a></div>
+                </div>
+            </div>
+            <div class="project__card px-6 py-4 border-gray-400 border-2 rounded-2xl text-center">
+                <img class="h-[350px] w-full object-cover object-center rounded-2xl" src="./images/calculator.png" alt="Tic Tac Toe">
+                <h1 class="project__info mt-4 font-bold text-[23px] max-lg:text-[20px] max-md:text-[17px]">Calculator</h1>
+                <div class="row mt-4 flex max-[380px]:flex-col items-center justify-center gap-4">
+                    <div class="btn btn--black"><a target="_blank" href="https://github.com/ibrohimmath/calculator">GitHub</a></div>
+                    <div class="btn btn--black"><a target="_blank" href="https://ibrohimmath.github.io/Calculator/">Live Demo</a></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="contact mt-[250px] w-full text-center">
+        <p id="contact" class="text-[rgb(111,110,110)] text-[18px] max-lg:text-[16px] max-md:text-[14px] max-sm:text-[14px] font-semibold">Get in Touch</p>
+        <h1 class="font-bold text-[35px] max-lg:text-[33px] max-md:text-[30px] max-sm:text-[26px]">Contact Me</h1>
+        <p class="mt-2 flex flex-wrap gap-4 justify-center items-center">
+            <span class="rounded-[50%] px-1 text-white"><i class="fa-regular fa-envelope bg-white"></i></span>
+            <a href="mailto:ahmadjonovibrohim062@gmail.com">ahmadjonovibrohim062@gmail.com</a>
+        </p>
+    </div>
+
+    <footer class="mt-[250px] w-full flex flex-col items-center justify-center">
+        <ul class="mx-auto flex flex-wrap justify-center gap-x-8 gap-y-2 text-[22px] max-lg:text-[20px] max-md:text-[18px] max-sm:text-[16px]">
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#projectss">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="copyright mt-16 mb-10 max-md:text-[14px] text-center">Copyright © 2023 Ibrohim Ahmadjonov. All Rights Reserved.</p>
+    </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>    
 <script src="./script.js"></script>
