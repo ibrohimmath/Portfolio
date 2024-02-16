@@ -1,3 +1,3 @@
 # Portfolio
 
-![portfolio] (images/portfolio_preview.png)
+![portfolio] (./images/portfolio_preview.png)
