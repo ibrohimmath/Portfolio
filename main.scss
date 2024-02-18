@@ -78,8 +78,8 @@ header {
 }
 
 .showcase {
-    &__content {
-    }
+    // &__content {
+    // }
     &__link {
         width: 40px;
     }
@@ -110,7 +110,6 @@ header {
     }
     &--fixed {
         width: 130px;
-        // color: #00008b;
     }
 }
  
@@ -124,6 +123,5 @@ footer {
 }
 
 #about {
-    scroll-margin-block-start: -300px;    
-   
+    scroll-margin-block-start: -300px;      
 }
